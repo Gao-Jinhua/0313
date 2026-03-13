@@ -1,0 +1,355 @@
+/* ============================================
+   郜锦华个人网站 - 自定义样式
+   华中农业大学资源与环境学院
+   ============================================ */
+
+/* ---------- 全局基础样式 ---------- */
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+  line-height: 1.8;
+}
+
+/* ---------- 导航栏 ---------- */
+.navbar {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* ---------- 英雄区块 ---------- */
+.hero-section {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 50%, #e0f7fa 100%);
+  border-left: 5px solid #4caf50;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin: 1.5rem 0 2rem 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-section h1 {
+  color: #2e7d32;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ---------- 信息卡片 ---------- */
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-top: 4px solid #4caf50;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(76,175,80,0.2);
+}
+
+.info-card h3 {
+  color: #2e7d32;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- 导航卡片 ---------- */
+.nav-card {
+  background: linear-gradient(135deg, #ffffff, #e8f5e9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border: 1px solid #81c784;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(46,125,50,0.2);
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+}
+
+.nav-card h3 a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.nav-card h3 a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+
+.nav-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ---------- 课程卡片 ---------- */
+.course-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-left: 4px solid #4caf50;
+  height: 100%;
+}
+
+.course-card h3 {
+  color: #2e7d32;
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #81c784;
+}
+
+.course-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.course-card li {
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+/* ---------- 展示卡片 ---------- */
+.gallery-card {
+  background: linear-gradient(135deg, #fff, #e8f5e9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #81c784;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-3px);
+}
+
+.gallery-card h3 {
+  color: #2e7d32;
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- 实践卡片 ---------- */
+.practice-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-top: 4px solid #0288d1;
+  height: 100%;
+}
+
+.practice-card h3 {
+  color: #0288d1;
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- 爱好卡片 ---------- */
+.hobby-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.hobby-card:hover {
+  border-color: #81c784;
+  transform: translateY(-3px);
+}
+
+/* ---------- 时间轴 ---------- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid #81c784;
+  margin: 1.5rem 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item::before {
+  content: "🌱";
+  position: absolute;
+  left: -2.55rem;
+  top: 1rem;
+  font-size: 1rem;
+}
+
+/* ---------- 引用区块 ---------- */
+.quote-section blockquote {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-style: normal;
+}
+
+.quote-section blockquote p {
+  margin: 0;
+  color: #444;
+}
+
+/* ---------- 通用引用样式 ---------- */
+blockquote {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  color: #444;
+}
+
+/* ---------- 标题样式 ---------- */
+h1, h2, h3 {
+  color: #2e7d32;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  border-bottom: 2px solid #e8f5e9;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+/* ---------- 链接样式 ---------- */
+a {
+  color: #2e7d32;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1b5e20;
+}
+
+/* ---------- 表格样式 ---------- */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+thead {
+  background: #2e7d32;
+  color: white;
+}
+
+thead th {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e8f5e9;
+}
+
+tbody td {
+  padding: 0.6rem 1rem;
+}
+
+/* ---------- 代码块 ---------- */
+pre {
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+  background: #f8f8f8 !important;
+}
+
+code {
+  color: #6d4c41;
+  background: #f5f5f5;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* ---------- 分割线 ---------- */
+hr {
+  border: none;
+  border-top: 2px dashed #81c784;
+  margin: 2rem 0;
+  opacity: 0.6;
+}
+
+/* ---------- 页脚 ---------- */
+.nav-footer {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #e8f5e9;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ---------- 工具类 ---------- */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+/* ---------- 响应式调整 ---------- */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ---------- 页面加载动画 ---------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section {
+  animation: fadeInUp 0.5s ease forwards;
+}
