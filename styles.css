@@ -3,38 +3,21 @@
    华中农业大学资源与环境学院
    ============================================ */
 
-/* ---------- 全局颜色变量 ---------- */
-:root {
-  --primary-green: #2e7d32;
-  --light-green: #4caf50;
-  --pale-green: #e8f5e9;
-  --accent-green: #81c784;
-  --dark-green: #1b5e20;
-  --earth-brown: #6d4c41;
-  --sky-blue: #0288d1;
-  --warm-white: #fafafa;
-  --text-dark: #2c2c2c;
-  --shadow: rgba(0, 0, 0, 0.1);
-}
-
 /* ---------- 全局基础样式 ---------- */
 body {
   font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
-  color: var(--text-dark);
-  background-color: var(--warm-white);
   line-height: 1.8;
 }
 
 /* ---------- 导航栏 ---------- */
 .navbar {
-  background: linear-gradient(135deg, var(--primary-green), var(--dark-green)) !important;
-  box-shadow: 0 2px 10px var(--shadow);
+  background: linear-gradient(135deg, #2e7d32, #1b5e20) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
   font-size: 1.2rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 .navbar .nav-link {
@@ -42,22 +25,18 @@ body {
   transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-  color: var(--accent-green) !important;
-}
-
 /* ---------- 英雄区块 ---------- */
 .hero-section {
-  background: linear-gradient(135deg, var(--pale-green) 0%, #f1f8e9 50%, #e0f7fa 100%);
-  border-left: 5px solid var(--light-green);
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 50%, #e0f7fa 100%);
+  border-left: 5px solid #4caf50;
   border-radius: 12px;
-  padding: 2.5rem 2.5rem;
+  padding: 2.5rem;
   margin: 1.5rem 0 2rem 0;
-  box-shadow: 0 4px 15px var(--shadow);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .hero-section h1 {
-  color: var(--primary-green);
+  color: #2e7d32;
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -74,31 +53,31 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 12px var(--shadow);
-  border-top: 4px solid var(--light-green);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-top: 4px solid #4caf50;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   height: 100%;
 }
 
 .info-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 8px 24px rgba(76,175,80,0.2);
 }
 
 .info-card h3 {
-  color: var(--primary-green);
+  color: #2e7d32;
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
 }
 
 /* ---------- 导航卡片 ---------- */
 .nav-card {
-  background: linear-gradient(135deg, #ffffff, var(--pale-green));
+  background: linear-gradient(135deg, #ffffff, #e8f5e9);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 12px var(--shadow);
-  border: 1px solid var(--accent-green);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border: 1px solid #81c784;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   height: 100%;
   text-align: center;
@@ -106,18 +85,18 @@ body {
 
 .nav-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
-  background: linear-gradient(135deg, var(--pale-green), #f1f8e9);
+  box-shadow: 0 10px 25px rgba(46,125,50,0.2);
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
 }
 
 .nav-card h3 a {
-  color: var(--primary-green);
+  color: #2e7d32;
   text-decoration: none;
   font-size: 1.05rem;
 }
 
 .nav-card h3 a:hover {
-  color: var(--dark-green);
+  color: #1b5e20;
   text-decoration: underline;
 }
 
@@ -133,17 +112,17 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 12px var(--shadow);
-  border-left: 4px solid var(--light-green);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-left: 4px solid #4caf50;
   height: 100%;
 }
 
 .course-card h3 {
-  color: var(--primary-green);
+  color: #2e7d32;
   font-size: 1.05rem;
   margin-bottom: 0.8rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px dashed var(--accent-green);
+  border-bottom: 1px dashed #81c784;
 }
 
 .course-card ul {
@@ -158,12 +137,12 @@ body {
 
 /* ---------- 展示卡片 ---------- */
 .gallery-card {
-  background: linear-gradient(135deg, #fff, var(--pale-green));
+  background: linear-gradient(135deg, #fff, #e8f5e9);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 12px var(--shadow);
-  border-bottom: 4px solid var(--accent-green);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #81c784;
   height: 100%;
   transition: transform 0.2s ease;
 }
@@ -173,7 +152,7 @@ body {
 }
 
 .gallery-card h3 {
-  color: var(--primary-green);
+  color: #2e7d32;
   margin-bottom: 0.8rem;
 }
 
@@ -183,13 +162,13 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 12px var(--shadow);
-  border-top: 4px solid var(--sky-blue);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-top: 4px solid #0288d1;
   height: 100%;
 }
 
 .practice-card h3 {
-  color: var(--sky-blue);
+  color: #0288d1;
   font-size: 1.05rem;
   margin-bottom: 0.8rem;
 }
@@ -200,14 +179,14 @@ body {
   border-radius: 12px;
   padding: 1.2rem;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 10px var(--shadow);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   text-align: center;
   border: 2px solid transparent;
   transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .hobby-card:hover {
-  border-color: var(--accent-green);
+  border-color: #81c784;
   transform: translateY(-3px);
 }
 
@@ -215,7 +194,7 @@ body {
 .timeline {
   position: relative;
   padding-left: 2rem;
-  border-left: 3px solid var(--accent-green);
+  border-left: 3px solid #81c784;
   margin: 1.5rem 0;
 }
 
@@ -225,7 +204,7 @@ body {
   padding: 1rem 1.2rem;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px var(--shadow);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .timeline-item::before {
@@ -238,8 +217,8 @@ body {
 
 /* ---------- 引用区块 ---------- */
 .quote-section blockquote {
-  background: var(--pale-green);
-  border-left: 4px solid var(--light-green);
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
   border-radius: 8px;
   padding: 1rem 1.5rem;
   margin: 1rem 0;
@@ -253,8 +232,8 @@ body {
 
 /* ---------- 通用引用样式 ---------- */
 blockquote {
-  background: var(--pale-green);
-  border-left: 4px solid var(--light-green);
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.5rem;
   color: #444;
@@ -262,7 +241,7 @@ blockquote {
 
 /* ---------- 标题样式 ---------- */
 h1, h2, h3 {
-  color: var(--primary-green);
+  color: #2e7d32;
 }
 
 h1 {
@@ -270,31 +249,31 @@ h1 {
 }
 
 h2 {
-  border-bottom: 2px solid var(--pale-green);
+  border-bottom: 2px solid #e8f5e9;
   padding-bottom: 0.4rem;
   margin-top: 2rem;
 }
 
 /* ---------- 链接样式 ---------- */
 a {
-  color: var(--primary-green);
+  color: #2e7d32;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--dark-green);
+  color: #1b5e20;
 }
 
 /* ---------- 表格样式 ---------- */
 table {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px var(--shadow);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   width: 100%;
 }
 
 thead {
-  background: var(--primary-green);
+  background: #2e7d32;
   color: white;
 }
 
@@ -304,7 +283,7 @@ thead th {
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--pale-green);
+  background-color: #e8f5e9;
 }
 
 tbody td {
@@ -314,12 +293,12 @@ tbody td {
 /* ---------- 代码块 ---------- */
 pre {
   border-radius: 8px;
-  border-left: 4px solid var(--light-green);
+  border-left: 4px solid #4caf50;
   background: #f8f8f8 !important;
 }
 
 code {
-  color: var(--earth-brown);
+  color: #6d4c41;
   background: #f5f5f5;
   padding: 0.1em 0.4em;
   border-radius: 4px;
@@ -329,21 +308,21 @@ code {
 /* ---------- 分割线 ---------- */
 hr {
   border: none;
-  border-top: 2px dashed var(--accent-green);
+  border-top: 2px dashed #81c784;
   margin: 2rem 0;
   opacity: 0.6;
 }
 
 /* ---------- 页脚 ---------- */
 .nav-footer {
-  background: linear-gradient(135deg, var(--dark-green), var(--primary-green));
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
   color: #e8f5e9;
   padding: 1rem 0;
   font-size: 0.9rem;
   text-align: center;
 }
 
-/* ---------- 文本居中工具类 ---------- */
+/* ---------- 工具类 ---------- */
 .text-center {
   text-align: center;
 }
@@ -356,14 +335,6 @@ hr {
 @media (max-width: 768px) {
   .hero-section h1 {
     font-size: 1.6rem;
-  }
-
-  .info-card,
-  .nav-card,
-  .course-card,
-  .gallery-card,
-  .practice-card {
-    margin-bottom: 1rem;
   }
 }
 
@@ -379,8 +350,6 @@ hr {
   }
 }
 
-.hero-section,
-.info-card,
-.nav-card {
+.hero-section {
   animation: fadeInUp 0.5s ease forwards;
 }
